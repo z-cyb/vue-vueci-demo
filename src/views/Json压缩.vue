@@ -35,9 +35,9 @@
             handleClick:function () {
                 let _this=this
                 this.axios.get('/api/routine/jsys/',{
-                    params:{js:this.textarea}
+                    params:{"js":this.textarea}
                 }).then(function (resp) {
-                    _this.textarea2=resp.data.ys
+                    _this.textarea2=resp.data.js
                 })
             },
             // handleClick2:function () {
