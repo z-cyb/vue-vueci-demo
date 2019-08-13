@@ -6,6 +6,9 @@
             <router-link to="/stylus">stylus</router-link> |
         </div>
         <router-view/>
+        <div>
+            <p>测试vue中预处理器less</p>
+        </div>
     </div>
 </template>
 
@@ -15,6 +18,9 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="less">
+    @color:blue;
+    div p{
+        color: @color;
+    }
 </style>
