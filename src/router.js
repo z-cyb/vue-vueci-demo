@@ -6,11 +6,15 @@ import Weather from './views/Weather.vue'
 import Base64 from './views/Base64'
 import Json压缩 from './views/Json压缩'
 import Student from './views/Student'
+import 预处理器 from './views/预处理器'
 
 import Stuappend from './components/Stuappend'
 import Studelete from './components/Studelete'
 import Stumodifier from './components/Stumodifier'
 import Stuselect from './components/Stuselect'
+import Sass from './components/Sass'
+import Less from './components/Less'
+import Stylus from './components/Stylus'
 // import
 
 Vue.use(Router)
@@ -54,6 +58,10 @@ export default new Router({
       name:'/student',
       component:Student
     },{
+      path:'/预处理器',
+      name:'/预处理器',
+      component:预处理器
+    },{
       path:'/Stuappend',
       name:'/stu_append',
       component:Stuappend
@@ -71,6 +79,20 @@ export default new Router({
       path:'/Stuselect',
       name:'/Stuselect',
       component:Stuselect
+    },
+    // 预处理器
+    {
+      path:'/Sass',
+      name:'/sass',
+      component:Sass
+    },{
+      path:'/Less',
+      name:'/less',
+      component:Less
+    },{
+      path:'/Stylus',
+      name:'/stylus',
+      component:Stylus
     },
   ]
 })

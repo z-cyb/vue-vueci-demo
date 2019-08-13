@@ -27,22 +27,22 @@
             }
         },
         methods:{
-            // handleClick:function () {
-            //     this.textarea2=JSON.stringify(this.textarea).replace('\n','')
-            // },handleClick2:function () {
-            //     this.textarea=JSON.parse(this.textarea2)
-            // },
             handleClick:function () {
-                let _this=this
-                this.axios.get('/api/routine/jsys/',{
-                    params:{"js":this.textarea}
-                }).then(function (resp) {
-                    _this.textarea2=resp.data.js
-                })
+                this.textarea2=JSON.stringify(this.textarea).replace('\n','')
+            },handleClick2:function () {
+                this.textarea=JSON.parse(this.textarea2)
             },
-            // handleClick2:function () {
-            //     this.textarea=JSON.parse(this.textarea2)
+            // handleClick:function () {
+            //     let _this=this
+            //     this.axios.get('/api/routine/jsys/',{
+            //         params:{"js":this.textarea}
+            //     }).then(function (resp) {
+            //         _this.textarea2=resp.data.js
+            //     })
             // },
+        //     // handleClick2:function () {
+        //     //     this.textarea=JSON.parse(this.textarea2)
+        //     // },
         }
     }
 </script>

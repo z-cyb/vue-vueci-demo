@@ -8,6 +8,7 @@
       <router-link to="/base64">base64</router-link>  |
       <router-link to="/Json压缩">json压缩</router-link>  |
       <router-link to="/Student">学生管理</router-link>  |
+      <router-link to="/预处理器">预处理器</router-link>  |
     </div>
     <router-view/>
   </div>
